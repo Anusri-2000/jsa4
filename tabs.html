@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        text-align: center;
+        margin-top: 300px;
+        word-spacing: 50px;
+        font-size: 15px;
+
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <button id="btn1">Button1</button>
+    <button id="btn2">Button2</button>
+    <button id="btn3">Button3</button>
+    </div>
+    <h1 id="m">Men</h1>
+    <h1 id="w">Women</h1>
+    <h1 id="c">children</h1>
+</body>
+<script>
+    document.getElementById('btn1').addEventListener('click',() =>{
+       document.getElementById("m").style.display="block"
+       document.getElementById("w").style.display="none";
+       document.getElementById("c").style.display="none";
+    })
+    document.getElementById('btn2').addEventListener('click',() =>{
+        document.getElementById("m").style.display="none"
+       document.getElementById("w").style.display="block";
+       document.getElementById("c").style.display="none";
+    })
+    document.getElementById('btn3').addEventListener('click',() =>{
+        document.getElementById("m").style.display="none"
+       document.getElementById("w").style.display="none";
+       document.getElementById("c").style.display="block";
+    })
+</script>
+</html>
